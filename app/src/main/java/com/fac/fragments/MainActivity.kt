@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(), SumFragment.OnActionListener {
             fragmentManager
                 .beginTransaction()
                 .replace(R.id.frame_layout_fragment, fragmentChange)
+                .addToBackStack("$n1 + $n2")
                 .commit()
         }
     }
